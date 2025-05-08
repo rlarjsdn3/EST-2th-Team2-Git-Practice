@@ -447,6 +447,6 @@ let people: [SelfIntroduction] = [
         strength: "끈기",
         sns: nil,
         etc: "부자되세요!",
-        job: "토스 - iOS 개발자"
+        job: "토스 - 임원"
     )
 ]
