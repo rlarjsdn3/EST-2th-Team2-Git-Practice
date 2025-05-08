@@ -421,7 +421,7 @@ let people: [SelfIntroduction] = [
     ),
     SelfIntroduction(
         name: "정소이",
-        trainingPurpose: "iOS 개발자가 되기 위한 훈련 참여",
+        trainingPurpose: "iOS 개발자로서 취업하기 위해",
         hobby: "여행, 운동 등",
         mbti: "INFP",
         strength: "끈기와 실행력",
