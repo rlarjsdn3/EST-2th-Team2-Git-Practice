@@ -212,8 +212,8 @@ let people: [SelfIntroduction] = [
     SelfIntroduction(
         name: "노기승",
         trainingPurpose: "새로운걸 배워보고 싶어서",
-        hobby: "영화 감상",
-        mbti: "INFP",
+        hobby: "영화",
+        mbti: "ENFP",
         strength: "끈기",
         sns: nil,
         etc: "열심히 수료!",
