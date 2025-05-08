@@ -12,12 +12,12 @@ extension Task where Failure == Error {
     static func delayed(
         byInterval interval: TimeInterval,
         priority: TaskPriority? = nil,
-        operation: @Sendable @escaping @isolated(any) () async -> Success
+        @_implicitSelfCapture operation: @Sendable @escaping @isolated(any) () async throws -> Success
     ) {
         Task<Success, Failure>(priority: priority) {
             let interval = UInt64(interval * 1_000_000_000)
             try await Task<Never, Never>.sleep(nanoseconds: interval)
-            return await operation()
+            return try await operation()
         }
     }
 }
